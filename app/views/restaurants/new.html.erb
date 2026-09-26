@@ -1,0 +1,8 @@
+<%# Ajout de notre formulaire %>
+<h2>Ajoutez les informations du restaurant</h2>
+<%= simple_form_for [@restaurant] do |f| %>
+<%= f.input :name %>
+<%= f.input :category %>
+<%= f.input :address %>
+<%= f.submit "Submit restaurant", class: "btn btn-primary" %>
+<% end %>
